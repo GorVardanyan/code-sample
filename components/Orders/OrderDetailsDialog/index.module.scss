@@ -1,0 +1,134 @@
+@import '../../../styles/variable';
+
+.popup_content {
+  padding-top: 9px !important;
+  padding-bottom: 35px !important;
+  max-height: calc(100vh - 185px);
+  overflow-y: auto;
+
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: $concrete;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $alto_1;
+    border-radius: 50px;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: $silver;
+  }
+}
+
+.order_products_wrapper {
+  margin-bottom: 16px;
+}
+
+.order_product {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  > div {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.photo_wrapper {
+  width: 50px;
+  height: 55px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  position: relative;
+  border: 1px solid $gallery_2;
+  border-radius: 4px;
+  padding: 6px 2px;
+  margin-right: 13px;
+}
+
+.product_photo {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.product_info_wrapper {
+  > div {
+    display: flex;
+    align-items: center;
+
+    > p {
+      color: $grey_1;
+      font-size: 12px;
+    }
+
+    > span {
+      background-color: $grey_1;
+      width: 1px;
+      height: 12px;
+      margin: 0 6px;
+    }
+  }
+
+  > h4 {
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 6px;
+  }
+}
+
+.price_wrapper {
+  > h4 {
+    font-weight: 500;
+    color: $black_1;  
+    font-size: 16px;
+  }
+}
+
+.horizontal_separator {
+  height: 1px;
+  background-color: $separator;
+  margin: 13px 0;
+}
+
+.horizontal_separator_second {
+  margin: 19px 0;
+}
+
+.detail_wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 7px;
+
+  > span {
+    color: $grey_1;
+    font-size: 16px;
+    line-height: 150%;
+  }
+
+  > p {
+    color: $black_1;
+    font-size: 16px;
+    line-height: 150%;
+  }
+}
+
+.wrap_up {
+  > p, span {
+    font-size: 14px;
+  }
+
+  > p {
+    font-weight: 500;
+  }
+}
+
+.close_dialog_button {
+  top: 13px !important;
+}

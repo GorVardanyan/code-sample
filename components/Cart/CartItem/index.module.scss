@@ -1,0 +1,93 @@
+@import '../../../../styles/variable';
+
+.cart_item {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  > div {
+    display: flex;
+    align-items: center;
+  }
+
+  > span {
+    position: absolute;
+    right: -6px;
+    top: -8px;
+    cursor: pointer;
+
+    > img {
+      width: 14px;
+      height: 17px;
+      object-fit: contain;
+    }
+  }
+}
+
+.card_buttons {
+  width: 92px !important;
+}
+
+.photo_wrapper {
+  width: 56px;
+  height: 63px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  position: relative;
+  border: 1px solid $gallery_2;
+  border-radius: 4px;
+  padding: 6px 2px;
+  margin-right: 17px;
+}
+
+.product_photo {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.product_info_wrapper {
+  > div {
+    display: flex;
+    align-items: center;
+
+    > p {
+      color: $grey_1;
+      font-size: 12px;
+    }
+
+    > span {
+      background-color: $grey_1;
+      width: 1px;
+      height: 12px;
+      margin: 0 6px;
+    }
+  }
+
+  > h4 {
+    margin-bottom: 6px;
+    font-weight: 500;
+  }
+}
+
+.count_wrapper {
+  position: relative;
+
+  > div {
+    margin-right: 32px;    
+  }
+
+  > h4 {
+    min-width: 70px;
+    font-weight: 500;
+    color: $black_1;
+  }
+}
+
+.count_error {
+  position: absolute;
+  font-size: 13px;
+  text-align: left;
+}

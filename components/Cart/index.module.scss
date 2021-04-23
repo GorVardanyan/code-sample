@@ -1,0 +1,140 @@
+@import '../../../styles/variable';
+
+.cart_page_container {
+  padding-left: 119px;  
+
+  .horizontal_separator {
+    height: 1px;
+    background-color: $separator;
+    margin: 19px 0;
+  }
+}
+
+.cart_container {
+  display: flex;
+}
+
+.vertical_separator {
+  margin: 0 34px;
+  width: 1px;
+  height: 504px;
+  background-color: $separator;
+}
+
+.first_column {
+  width: 710px;
+
+  > h1 {
+    margin-bottom: 25px;
+  }
+}
+
+.second_column {
+  width: 260px;
+
+  > h2 {
+    font-size: 22px;
+    margin-bottom: 25px;
+    font-weight: 500;
+  }
+
+  > .horizontal_separator {
+    margin: 16px 0 13px 0;
+  }  
+}
+
+.cart_items {
+  margin-bottom: 38px;
+}
+
+.checkout_summary {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+
+  & > p {
+    font-size: 14px;
+    line-height: 150%;
+    color: $grey_1;
+  }
+
+  & > span {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    color: $black_1;
+  }
+}
+
+.checkout_summary_total {
+  margin-bottom: 21px;
+}
+
+.pay_with_card_button {
+  margin-bottom: 8px;
+
+  > button {
+    border-radius: 4px;
+  }
+}
+
+.buttons_wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.apple_google_button {
+  width: 49%;
+
+  > button {
+    border-radius: 4px;
+    background-color: $black_3;
+  }
+}
+
+.details_heading {
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 18px;
+}
+
+.checkbox_block {
+  width: 49%;
+  display: flex;
+  align-items: center;
+}
+
+.message {
+  padding-right: 119px;
+  text-align: center;
+  width: 100%;
+}
+
+.go_back {
+  margin-bottom: 26px;
+}
+
+.error_message {
+  color: $error;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.promo_code_wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.accent_button_wrapper {
+  width: 81px;
+  margin-top: 6px;
+  margin-left: 5.22px;
+}
+
+.promo_code_input {
+
+  input {
+    height: 38px !important;
+  }
+}
